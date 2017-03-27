@@ -71,7 +71,7 @@ export default class SimpleListView extends Component {
         });
     }
 
-    componentDidUnMount() {
+    componentWillUnMount() {
         BackAndroid.removeEventListener('hardwareBackPress');
     }
 

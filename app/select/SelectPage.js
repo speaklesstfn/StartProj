@@ -31,7 +31,7 @@ export default class SectionListView extends Component {
         });
     }
 
-    componentDidUnMount() {
+    componentWillUnMount() {
         BackAndroid.removeEventListener('hardwareBackPress');
     }
 
